@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2ff7d;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(247, 223, 191);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Media Query para pantallas pequeñas (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #2450e1; /* Color de fondo ajustado para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente reducido para encabezados en pantallas pequeñas */
+    }
+
+    section {
+        width: 95%; /* Ancho ajustado de la sección para dispositivos móviles */
+        padding: 10px; /* Padding reducido en dispositivos móviles */
+    }
+}
+.pa1{
+    text-decoration: underline;
+}
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    text-align: left;
+    background-color: #e7e7e7;
+    padding: 15px;
+    margin: 0;
+}
+.caja1 {
+    padding: 20px; /* Espacio interno */
+    margin: 30px; /* Espacio externo */
+    border: 2px solid #000; /* Borde de 2 píxeles de ancho y color negro */
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento, desenfoque, expansión y color */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    text-align: left; /* Centra el texto dentro de la caja */
+}
+.caja2{
+    padding: 20px; /* Espacio interno */
+    margin: 30px; /* Espacio externo */
+    border: 4px solid #000; /* Borde de 2 píxeles de ancho y color negro */
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento, desenfoque, expansión y color */
+    background-color:rgba(245, 202, 138, 0.977); /* Color de fondo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    text-align: left; /* Centra el texto dentro de la caja */
+}
+.relativo {
+    position: relative; /* Posición relativa */
+    top: 20px; /* Ajusta la posición desde la parte superior */
+    left: 0px; /* Ajusta la posición desde la izquierda */
+    background-color: #c9ffffbb; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 50px; /* Margen inferior para evitar solapamientos */
+    width: 1020px; /* Ancho del contenedor */
+    height: 30px; /* Altura del contenedor */
+    border: 2px solid #000; /* Borde */
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+.absoluto {
+    position: absolute; /* Posición absoluta */
+    top: 50px; /* Ajusta la posición desde la parte superior del contenedor padre */
+    left: 500px; /* Ajusta la posición desde la izquierda del contenedor padre */
+    background-color: #17dbbd; /* Color de fondo */
+    padding: 10px; /* Espacio interno */
+    border: 2px solid #000; /* Borde */
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dos columnas de igual ancho */
+    grid-gap: 45px; /* Espacio entre los elementos de la cuadrícula */
+    width: 100%;
+    padding: 15px;
+}
+.grid-item {
+    background-color: #00ccff; /* Color de fondo de los elementos de la cuadrícula */
+    padding: 15px;
+    text-align: center;
+    border: 2px;
+    border-radius: 8px;
+}
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 54, 154);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease;
+}
+.animacion:hover {
+    background-color: red;
+}
+.mover {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(232, 43, 226);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveLeftRight 2s infinite;
+}
+@keyframes moveLeftRight {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 200px;
+    }
+    100% {
+        left: 0;
+    }
+}
